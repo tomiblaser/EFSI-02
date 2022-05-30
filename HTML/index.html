@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>TP 1: Introducción a Javascript</title>
+        <script defer type="text/javascript" src="../JS/funciones.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <center>
+                <form id="formulario">
+                    <p>Ingrese la nota de Matematica</p><input name="inputNota" type="text" id="notaMatematica" onkeyup="validarNota(document.getElementById('notaMatematica').value,'notaMatematica')"><br>
+                    <p>Ingrese la nota de Lengua</p><input name="inputNota" type="text" id="notaLengua" onkeyup="validarNota(document.getElementById('notaLengua').value,'notaLengua')"><br>
+                    <p>Ingrese la nota de EFSI</p><input name="inputNota" type="text" id="notaEfsi" onkeyup="validarNota(document.getElementById('notaEfsi').value,'notaEfsi')">
+                <br><br>
+                <button class="btn btn-primary" type="button" onclick="calcularPromedio()">Calcular Promedio</button>
+                <button class="btn btn-primary" type="button" onclick="materiaMasAlta()">Materia mas alta</button>
+                </form>
+
+                <div id="mostrarResultado">
+                    <p>Resultado</p><input type="text" id="resultado" readonly><br><br>
+                </div>
+                <img src="../img/Bienvenido_logo.png" id="aprobo">
+            </center>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
